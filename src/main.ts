@@ -1,12 +1,12 @@
 import {enableProdMode} from '@angular/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
-import {CustomerAppModule} from './customerApp/customerApp.module';
+import {CustomerAppMainModule} from './customerApp/customerApp.mainModule';
 import {environment} from './environments/environment';
 
 if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(CustomerAppModule)
+platformBrowserDynamic().bootstrapModule(CustomerAppMainModule)
   .catch(err => console.error(err));
