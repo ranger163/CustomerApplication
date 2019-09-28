@@ -6,9 +6,9 @@ Customer Amount :<input [(ngModel)]="customerModel.customerAmount" type=text/><b
 {{customerModel.customerName}}<br>
 {{customerModel.customerAmount}}<br>
 <table>
-  <tr>
-    <td>Customer Code | </td>
-    <td>Customer Name | </td>
+  <tr *ngIf="customerModels.length>0">
+    <td>Customer Code |</td>
+    <td>Customer Name |</td>
     <td>Customer Amount</td>
   </tr>
   <tr *ngFor="let cust of customerModels">
