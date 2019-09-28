@@ -4,17 +4,17 @@ import {SupplierComponent} from '../supplier/customerApp.supplierComponent';
 
 export const MainRouts = [
   {
-    path: '',
-    component: HomeComponent
-  },
-  {
     path: 'home',
     component: HomeComponent
   }, {
     path: 'customer',
     component: CustomerComponent
   }, {
-    path: 'suppliers',
+    path: 'supplier',
     component: SupplierComponent
+  },
+  {
+    path: '',
+    component: HomeComponent
   }
 ];
