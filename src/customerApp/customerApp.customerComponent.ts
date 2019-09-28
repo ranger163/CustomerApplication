@@ -3,10 +3,9 @@ import {Customer} from './customerApp.model';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './customerApp.view.html'
+  templateUrl: './customerApp.customerView.html'
 })
 export class CustomerAppComponent {
-  title = 'CustomerApplication';
   customerModel = new Customer();
   customerModels = new Array<Customer>();
 
